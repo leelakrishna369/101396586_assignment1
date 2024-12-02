@@ -10,10 +10,8 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-// MongoDB connection
-const DB_CONNECTION_STRING = "mongodb+srv://admin:harin123@cluster0.pujm6.mongodb.net/comp3123_assignment1?retryWrites=true&w=majority&appName=Cluster0"
 
-mongoose.connect(DB_CONNECTION_STRING, {
+mongoose.connect('mongodb+srv://lkrm1585:lkrm1585@cluster0.vvphl.mongodb.net/comp3123_assignment1?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,  
     useUnifiedTopology: true
 }).then(() => {
